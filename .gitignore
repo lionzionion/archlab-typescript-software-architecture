@@ -1,0 +1,32 @@
+# Dependencias
+node_modules/
+
+# Saidas geradas — sempre recompilar com npm run build
+dist/
+coverage/
+*.tsbuildinfo
+
+# Dados locais alterados durante a execucao
+data/*.json
+!data/.gitkeep
+
+# Segredos e configuracao local
+.env
+.env.*
+!.env.example
+
+# Windows / macOS / editores
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Modelos de IA
+*.gguf
+*.safetensors
+*.bin

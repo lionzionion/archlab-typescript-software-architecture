@@ -1,0 +1,27 @@
+{
+  "name": "archlab-arquitetura",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Laboratório de Arquitetura de Software com TypeScript, 8 aulas e IA local Ollama + LangChain",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "dev": "npm run build && npm start",
+    "test": "npm run build && node --test",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "check:ai": "node scripts/check-ollama.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "@types/node": "^24.0.0"
+  },
+  "optionalDependencies": {
+    "@langchain/ollama": "^1.0.0",
+    "@langchain/core": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
